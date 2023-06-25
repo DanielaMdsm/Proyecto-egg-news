@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" th:href="@{/css/style.css}">
+        <title>Login | EGG noticias</title>
+    </head>
+
+    <body>
+        <main> 
+             
+            <div class="main-form"> 
+                <div class="principal-form mb-1"> 
+                    <h1>EGG NOTICIAS</h1>
+                    <p>Inicia sesion para estar actualizado</p>
+                    <img th:src="@{/images/imagen.png}" alt="cohete" width="500px">
+                </div>
+               
+                   <div th:if="${exito}!=null" class="card text-white bg-success mb-3 mt-1 mensajeExito" >
+                    <div class="card-body">
+                        <h5 class="card-title">Exito</h5>
+                        <p class="card-text" th:text="${exito}"></p>
+                    </div>
+                </div> 
+                
+                <div th:if="${error}!=null" class="card text-white bg-danger mb-1 mensajeError" >
+                    <div class="card-body">
+                        <h5 class="card-title">Error!</h5>
+                        <p class="card-text" th:text="${error}"></p>
+                    </div>
+                </div> 
+                
+                <div class="formulario"> 
+                    <form th:action="@{/user/loginCheck}" method="POST">
+                        <div class="mb-4">
+                            <label for="usuario" class="form-label">Nombre de Usuario</label>
+                            <input type="text" class="form-control" id="usuario" name="nombreUsuario">
+                        </div>
+                        <div class="mb-4">
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" name="password">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="btn-inicio">Iniciar Sesion</button>
+                        <hr>
+                        <a th:href="@{/user/registrar}"><button id="btn-crear-cuenta">Crear una cuenta</button></a>
+                    </form>
+                </div> 
+             
+            </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+                integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+                integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    </body>
+
+</html>

@@ -1,0 +1,200 @@
+html{
+    overflow-x: hidden;
+}
+header .encabezado{
+    background: linear-gradient(white,yellow);
+    padding: 20px 0;
+}
+.encabezado{
+    width: 940px;
+    height: 100px;
+    margin: 0 auto;
+
+}
+.imagen-egg{
+    border-radius: 20px;
+    margin-top: 0;
+}
+.encabezado h1{
+    position: absolute;
+    top: 50px;
+    margin-left: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+}
+.encabezado h1:hover{
+    transition: 1s;
+    color: rgb(156, 144, 144);
+} 
+nav{ 
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    
+} 
+
+.card{
+    margin: 20px; 
+    padding: 20px;
+    display: block;
+    border-color: orange;
+}
+#titulo-crear{
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+    text-decoration: underline;
+    color: #008080;
+} 
+
+.mb-3{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;;
+    width: 50%;
+}
+#boton-crear{
+    margin: 10px 200px;;
+
+}  
+
+    
+#tabla{
+   
+    width: 90%;
+    margin:50px auto;;
+    text-align: center;
+    
+
+}
+thead{
+    
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+.btn btn-primary{
+    margin: 10px;
+}
+.noticia { 
+    width: 940px;
+    margin: 30px auto;
+    
+}
+.noticia h1{ 
+    text-align: center;
+   color: #4682B4;
+    font-family: 'Paytone One', sans-serif;
+    padding: 10px;
+}
+.noticia img{
+    width: 100%;
+    height: 400px;;
+}
+.noticia p::first-letter{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+footer{
+    width: 100%;
+    background-color: #008080;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    
+
+}
+.pie{
+    color: white;
+    padding-bottom: 15px;
+}
+#img-git{
+    border-radius: 15px;
+    margin: 15px;
+} 
+   
+
+.main-form{
+    display: flex; 
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+     font-family: 'Merriweather', serif;
+    background-color: aliceblue;
+}
+.principal-form{
+    width: 50%;
+    padding: 30px;
+    display: inline-block;
+    margin: 40px;
+}
+.principal-form h1{
+    color: rgb(47, 166, 239);
+    
+}
+.formulario{
+    width: 30%;
+    display: inline-block;
+    border: 1px solid;
+    box-shadow:  2px 2px 2px 1px rgba(10, 10, 10, 0.616);
+    padding: 20px;
+    background-color: white;
+}
+.formulario label{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px
+} 
+.formulario-registro h6{
+    color:red;
+    font-size: 10px;
+    padding-top: 5px;
+   
+}
+#btn-inicio{
+    margin-left: 15%;
+    padding: 10px;
+    width: 70%;
+}
+#btn-crear-cuenta{
+    background-color: rgb(100, 237, 41);
+    color: aliceblue;
+    margin: 10px 25%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.registrarse{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Merriweather', serif;
+    background-color: aliceblue;
+} 
+.formulario-registro{
+    padding: 15px;
+    border: 2px solid;
+}
+.formulario-registro h3{
+    color: rgb(36, 131, 239);
+    text-align: center;
+}
+.form-group{
+    margin: 10px;
+}
+#btn-registro{
+    margin-left: 15%;
+    padding: 10px;
+    width: 70%;
+}
